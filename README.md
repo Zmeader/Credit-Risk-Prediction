@@ -18,12 +18,12 @@ In order to create the models, there must be data. The data used has 8 quantitat
 Once the data was pulled, the X and y variables need to be assigned. y was isolated for just the loan status column and X combined the other 7 elements. Once the data had been assigned, it was split into a training and testing set via the Scikit learn function of `train_test_split()`.
 
 ### Step 3:
-Once the data had been split, the LogisticRegression function was used to create a classifier in order to run the `score()` function on both the training data and the test data. The model score for the Testing Data was .99212 and the score for the training data was .99184.
+Once the data had been split, the LogisticRegression function was used to create a classifier in order to run the `score()` function on both the training data and the test data. The model score for the Testing Data was .99246 and the score for the Training data was .99191.
 
 ### Step 4:
 
-The next model used to compare the scores was the Random Forest Classifier (RFC). The function was also imported from Scikit and the `clf` classification allowed the RFC `score` to be calculated. The model score for the RFC testing data was .99754 and the score for the training data was .99164
+The next model used to compare the scores was the Random Forest Classifier (RFC). The function was also imported from Scikit and the `clf` classification allowed the RFC `score` to be calculated. The model score for the RFC Testing data was .99221 and the score for the Training data was .99719
 
 ## Results
 
-It was extremely close but it appears the Logistic Regression Model tested better at .9918 vs the Random Forest Classifier score of .9916. Furthermore, the data was scaled in order to gain more understanding towards the RFC and, as expected, the training and testing scores were slightly lower at .96765 and .96806 respectively. The prediction stated earlier was correct by choosing the logistic regression model to have a better score and that the difference would be very small. It is also noteworthy how high each score was. This could be because because the credit risk variables are very specific and the data size is very large so the model has plenty of line items to develop accuracy.
+It was extremely close but it appears the Logistic Regression Model tested better at .99246 vs the Random Forest Classifier score of .99221. Furthermore, the data was scaled in order to gain more understanding towards the RFC and, as expected, the training and testing scores were slightly lower at .96718 and .96945 respectively. The prediction stated earlier was correct by choosing the logistic regression model to have a better score and that the difference would be very small. It is also noteworthy how high each score was. This could be because because the credit risk variables are very specific and the data size is very large so the model has plenty of line items to develop accuracy.
